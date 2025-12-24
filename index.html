@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carta - Villa Magma's</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+  background:
+    linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url("fondo.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px 15px 60px;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.logo img {
+  width: 200px;
+}
+
+h2 {
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,.6);
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+}
+
+/* ---------- MENU ---------- */
+
+.menu-item {
+  background: rgba(0,0,0,.55);
+  border-radius: 12px;
+  margin-bottom: 18px;
+  overflow: hidden;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 18px;
+  cursor: pointer;
+}
+
+.menu-header:hover {
+  background: rgba(255,255,255,.08);
+}
+
+.menu-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.price {
+  font-weight: bold;
+}
+
+/* ---------- DESPLEGABLE ---------- */
+
+.menu-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all .45s ease;
+  padding: 0 18px;
+}
+
+.menu-item.active .menu-content {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.menu-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.menu-content p {
+  margin: 15px 0 20px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  opacity: .85;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>CARTA</h1>
+
+  <div class="logo">
+    <img src="logo.png" alt="Villa Magma's">
+  </div>
+
+  <h2>PLATOS CLÁSICOS</h2>
+
+  <!-- CUY ENTERO -->
+  <div class="menu-item">
+    <div class="menu-header">
+      <span class="menu-title">Cuy Entero Frito</span>
+      <span class="price">S/. 60</span>
+    </div>
+    <div class="menu-content">
+      <img src="cuy-entero.jpg">
+      <p>
+        Cuy dorado acompañado con papas sancochadas, choclo y una deliciosa
+        ensalada mixta bañada con exquisita vinagreta de casa.
+      </p>
+    </div>
+  </div>
+
+  <!-- MEDIO CUY -->
+  <div class="menu-item">
+    <div class="menu-header">
+      <span class="menu-title">Medio Cuy Frito</span>
+      <span class="price">S/. 30</span>
+    </div>
+    <div class="menu-content">
+      <img src="medio-cuy.jpg">
+      <p>
+        1/2 cuy dorado acompañado con papas sancochadas, choclo y una deliciosa
+        ensalada mixta bañada con exquisita vinagreta de casa.
+      </p>
+    </div>
+  </div>
+
+  <!-- TRUCHA -->
+  <div class="menu-item">
+    <div class="menu-header">
+      <span class="menu-title">Trucha Frita</span>
+      <span class="price">S/. 20</span>
+    </div>
+    <div class="menu-content">
+      <img src="trucha.jpg">
+      <p>
+        Trucha frita acompañada con papas sancochadas, choclo y una deliciosa
+        ensalada mixta bañada con exquisita vinagreta de casa.
+      </p>
+    </div>
+  </div>
+
+  <!-- CHICHARRON -->
+  <div class="menu-item">
+    <div class="menu-header">
+      <span class="menu-title">Chicharrón de Chancho</span>
+      <span class="price">S/. 20</span>
+    </div>
+    <div class="menu-content">
+      <img src="chicharron.jpg">
+      <p>
+        Trozos de carne de chancho dorados acompañados con papas sancochadas,
+        chuño, choclo y ensalada de cebolla roja, tomate y hierbabuena.
+      </p>
+    </div>
+  </div>
+
+  <!-- PARRILLA MIXTA -->
+  <div class="menu-item">
+    <div class="menu-header">
+      <span class="menu-title">Parrilla Mixta</span>
+      <span class="price">S/. 30</span>
+    </div>
+    <div class="menu-content">
+      <img src="parrilla-mixta.jpg">
+      <p>
+        Pollo a la plancha con papa sancochada, anticucho, choclo, chorizo,
+        ensalada con vinagreta y chuleta de chancho.
+      </p>
+    </div>
+  </div>
+
+  <!-- POLLO -->
+  <div class="menu-item">
+    <div class="menu-header">
+      <span class="menu-title">Pollo a la Parrilla</span>
+      <span class="price">S/. 20</span>
+    </div>
+    <div class="menu-content">
+      <img src="pollo-parrilla.jpg">
+      <p>
+        Pechuga de pollo acompañada de papa sancochada, ensalada con vinagreta
+        junto a chorizo.
+      </p>
+    </div>
+  </div>
+
+  <!-- CHULETA -->
+  <div class="menu-item">
+    <div class="menu-header">
+      <span class="menu-title">Chuleta a la Parrilla</span>
+      <span class="price">S/. 20</span>
+    </div>
+    <div class="menu-content">
+      <img src="chuleta-parrilla.jpg">
+      <p>
+        Chuleta de chancho acompañada de papa sancochada, ensalada con vinagreta
+        junto a chorizo.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    © Villa Magma's – Recreo Campestre
+  </footer>
+
+</div>
+
+<script>
+document.querySelectorAll(".menu-header").forEach(header => {
+  header.addEventListener("click", () => {
+    header.parentElement.classList.toggle("active");
+  });
+});
+</script>
+
+</body>
+</html>
